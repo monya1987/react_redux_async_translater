@@ -1,3 +1,4 @@
+import * as types from '../constants';
 
 const languagesReduser = (state = {
     isFetching: false,
@@ -9,24 +10,24 @@ const languagesReduser = (state = {
     }, action) => {
 
 
-    if( action.type === 'CHANGE_LANGTO' ) {
+    if( action.type === types.CHANGE_LANGTO ) {
         return Object.assign({}, state, {
             langTo: action.action,
         })
     }
-    if( action.type === 'CHANGE_LANGFROM' ) {
+    if( action.type === types.CHANGE_LANGFROM ) {
         return Object.assign({}, state, {
             langFrom: action.action,
         })
     }
 
 
-    if( action.type === 'REQUEST_LANGS' ) {
+    if( action.type === types.REQUEST_LANGS ) {
         return Object.assign({}, state, {
             isFetching: true,
         })
     }
-    if( action.type === 'RECEIVE_LANGS' ) {
+    if( action.type === types.RECEIVE_LANGS ) {
         return Object.assign({}, state, {
             isFetching: false,
             langFrom: Object.keys(action.action.data.langs)[0],
@@ -34,21 +35,21 @@ const languagesReduser = (state = {
             items: action.action.data.langs
         })
     }
-    if( action.type === 'ERROR_LANGS' ) {
+    if( action.type === types.ERROR_LANGS ) {
         console.log(action);
     }
 
 
-    if( action.type === 'REQUEST_TRANSLATE' ) {
+    if( action.type === types.REQUEST_TRANSLATE ) {
         console.log(action);
     }
-    if( action.type === 'RECEIVE_TRANSLATE' ) {
+    if( action.type === types.RECEIVE_TRANSLATE ) {
         console.log(action);
         return Object.assign({}, state, {
             textTo: action.action.data.text[0],
         })
     }
-    if( action.type === 'ERROR_TRANSLATE' ) {
+    if( action.type === types.ERROR_TRANSLATE ) {
         return Object.assign({}, state, {
             textTo: '',
         })

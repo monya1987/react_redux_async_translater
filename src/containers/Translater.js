@@ -40,7 +40,7 @@ class Translater extends Component {
                 <br/><br/><br/><br/>
                 <div className="row">
                     <div className="col-sm-6">
-                    <select className="form-control" name="langFrom" value={this.props.lang.langFrom} onChange={this.handleLangChangeFrom}>
+                    <select className="form-control" name="langFrom" value={lang.langFrom} onChange={this.handleLangChangeFrom}>
                         {Object.keys(lang.items).map(function (key, index) {
                             return (
                                 <option key={index} value={Object.keys(lang.items)[index]}>{lang.items[key]}</option>
@@ -48,7 +48,7 @@ class Translater extends Component {
                     </select>
                     </div>
                     <div className="col-sm-6">
-                    <select className="form-control" name="langTo" value={this.props.lang.langTo} onChange={this.handleLangChangeTo}>
+                    <select className="form-control" name="langTo" value={lang.langTo} onChange={this.handleLangChangeTo}>
                         {Object.keys(lang.items).map(function (key, index) {
                             return (
                                 <option key={index} value={Object.keys(lang.items)[index]}>{lang.items[key]}</option>
@@ -71,7 +71,7 @@ class Translater extends Component {
                             <button className="btn btn-primary" value="en" onClick={this.handleLangChangeTo}>English</button>
                         </div>
                         <div className="form-group">
-                            <textarea className="form-control" name="textTo" disabled value={this.props.lang.textTo}/>
+                            <textarea className="form-control" name="textTo" disabled value={lang.textTo}/>
                         </div>
                     </div>
                 </div>

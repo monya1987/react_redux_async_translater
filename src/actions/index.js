@@ -1,16 +1,18 @@
 import axios from 'axios';
+import * as types from '../constants';
 
+console.log(types);
 
 export const changeLangTo = (action) => {
     return {
-        type: 'CHANGE_LANGTO',
+        type: types.CHANGE_LANGTO,
         action
     }
 };
 
 export const changeLangFrom = (action) => {
     return {
-        type: 'CHANGE_LANGFROM',
+        type: types.CHANGE_LANGFROM,
         action
     }
 };
@@ -22,14 +24,14 @@ function requestLanguages() {
 
 function receiveLanguages(action) {
     return{
-        type: 'RECEIVE_LANGS',
+        type: types.RECEIVE_LANGS,
         action
     }
 };
 
 function errorLanguages(action) {
     return {
-        type: 'ERROR_LANGS',
+        type: types.ERROR_LANGS,
         action
     }
 };
@@ -50,19 +52,19 @@ export const fetchLanguages = (url) => {
 /*----------------------------------------------------------*/
 
 function requestTranslate() {
-    return {type: 'REQUEST_TRANSLATE'}
+    return {type: types.REQUEST_TRANSLATE}
 };
 
 function receiveTranslate(action) {
     return {
-        type: 'RECEIVE_TRANSLATE',
+        type: types.RECEIVE_TRANSLATE,
         action
     }
 };
 
 function errorTranslate(action) {
     return {
-        type: 'ERROR_TRANSLATE',
+        type: types.ERROR_TRANSLATE,
         action
     }
 };
