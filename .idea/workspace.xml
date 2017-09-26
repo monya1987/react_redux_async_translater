@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5aa559a-1442-4db1-82a3-b6fbd37a2a47" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Translater.js" afterPath="$PROJECT_DIR$/src/containers/Translater.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/languagesList.js" afterPath="$PROJECT_DIR$/src/reducers/languagesList.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -143,7 +139,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="42" />
     <option name="y" value="26" />
     <option name="width" value="1757" />
@@ -173,11 +169,6 @@
             <path>
               <item name="react_translater" type="b2602c69:ProjectViewProjectNode" />
               <item name="react_translater" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react_translater" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react_translater" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react_translater" type="b2602c69:ProjectViewProjectNode" />
@@ -251,15 +242,15 @@
       <workItem from="1505736827628" duration="8382000" />
       <workItem from="1505891923449" duration="1212000" />
       <workItem from="1505976173766" duration="1212000" />
-      <workItem from="1506410247599" duration="1461000" />
+      <workItem from="1506410247599" duration="1647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48805000" />
+    <option name="totallyTimeSpent" value="48991000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18335089" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
